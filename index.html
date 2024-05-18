@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel Recommendation</title>
+        <link rel="stylesheet" href="./travel_recommendation.css">
+        <script src='./travel_recommendation.js'></script>
+    </head>
+    <body>
+        <div class="sidebar">
+            <div class="line"></div>
+            <div class="social-handles">
+                <img src='./images/twitter.png' alt="twitter"/>
+                <img src='./images/facebook.png' alt="facebook"/>
+                <img src='./images/instagram.png' alt="instagram"/>
+                <img src='./images/youtube.png' alt="youtube"/>
+            </div>
+        </div>
+        <nav>
+            <a href="/" class="home-link">
+                <img src="./images/airplane.png" alt="logo" class="logo"/>
+                <span>TravelBloom</span>
+            </a>
+            <div class="links">
+                <a href="/travelRecommendation/travel_recommendation.html">Home</a>
+                <a href="/travelRecommendation/about_us.html">About Us</a>
+                <a href="/travelRecommendation/contact_us.html">Contact Us</a>
+            </div>
+            <div class="search_section">
+                <div class="input-div">
+                    <input placeholder='Enter a destination or keyword' name="input" id="searchInput" onInput="fetchData()"/>
+                    <img src="./images/search.svg" alt="search" class="search_icon"/>
+                </div>
+                <div class="buttons">
+                    <button type="button">Search</button>
+                    <button type="button">Close</button>
+                </div>
+            </div>
+        </nav>
+        <div class="main-div home-div">
+            <div class="content">
+                <h2>EXPLORE  <br/>DREAM <br/> DESTINATION</h2>
+                <p>It encourages exploration of unfamiliar territories, embracing diverse cultures and landscape, while pursuing the desires destination that captivates the heart and ignites a sense of wonder</p>
+
+                <div class="reserve">
+                    <button>BOOK NOW</button>
+                </div>
+            </div>
+            <div id="search_content"></div>
+        </div>
+    </body>
+</html>
