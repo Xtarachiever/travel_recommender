@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    position: relative;
+}
+.sidebar{
+    position: absolute;
+    transform: translateY(-55%);
+    top: 55%;
+    z-index: 10;
+}
+.sidebar .line{
+    height: 180px;
+    width: 3px;
+    background-color: white;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+.sidebar .social-handles{
+    display: flex;
+    flex-direction: column;
+}
+.sidebar .social-handles img{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+nav{
+    background-color: rgb(23, 44, 23);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    position: relative;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(229, 72, 72);
+}
+.home-link{
+    display: flex;
+    align-items: center;
+}
+.home-link img{
+    padding-right: 10px;
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    max-width: 350px;
+    min-width: 200px;
+}
+.logo{
+    width: 100px;
+    height: 70px;
+}
+.search_section{
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    min-width: 340px;
+    max-width: 400px;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 5px 10px;
+}
+.search_section .input-div input{
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+.search_section .input-div{
+    position: relative;
+    flex: 1;
+}
+.search_section .input-div img{
+    position: absolute;
+    right: 0px;
+    top: 7px;
+}
+.search_icon{
+    width: 15px;
+    height: 15px;
+}
+button{
+    background-color: green;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 6px;
+}
+.main-div{
+    background-image: url('./images/skyscrapers.png');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    width: 100vw;
+    background-size: cover;
+    position: relative;
+}
+.main-div .content{
+    top: 140px;
+    color: white;
+    position: relative;
+    padding-left: 130px;
+    padding-right: 50px;
+    max-width: 380px;
+}
+.main-div .content h2{
+    margin: 0px;
+    font-size: 3.2rem;
+}
+.main-div .content p{
+    line-height: 26px;
+    font-size: 17px;
+    font-weight: 500;
+}
+.reserve button{
+    background-color: green;
+    color: white;
+    padding: 10px 14px;
+}
+.main-div.home-div{
+    display: flex;
+    justify-content: space-between;
+}
+#search_content{
+    margin-top: 20px;
+}
+.search_div{
+    background-color: white;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.search_div .search_texts{
+    padding: 10px;
+}
+.search_div .search_texts button{
+    padding: 5px 15px;
+}
+.search_div img{
+    max-width: 100%;
+}
+/* about us page styling */
+.main-div .about h1{
+    font-size: 40px;
+    margin-top: 0px;
+}
+.main-div .about,
+.main-div .team-div,
+.main-div .contact-wrapper{
+    width: 85%;
+    margin: auto;
+    padding-top: 80px;
+    color: white;
+}
+.main-div .about p{
+    font-size: 18px;
+    line-height: 24px;
+}
+.main-div .about b{
+    font-weight: 700;
+}
+.main-div .team-div h1{
+    font-size: 45px;
+    font-weight: 600;
+}
+.main-div .team-div{
+    padding-left: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+.main-div .team-div .wrapper{
+    background-color: rgba(0, 0, 0, 0.25);
+    width: fit-content;
+    padding: 10px 20px;
+}
+.main-div .team-div .wrapper button{
+    width: 100%;
+    background-color: rgb(10, 10, 142);
+    padding: 10px;
+}
+/* contact styling */
+.main-div .contact-wrapper{
+    display: flex;
+    align-items: center;
+}
+.main-div .contact-wrapper .header{
+    width: 38%;
+    padding-right: 20px;
+}
+.main-div .contact-wrapper h1{
+    font-size: 42px;
+}
+.main-div .contact-wrapper .contact-form{
+    width: 100%;
+}
+.main-div .contact-wrapper .contact-form div{
+    margin: 20px auto;
+}
+.main-div .contact-wrapper .contact-form div label{
+    display: block;
+}
+.main-div .contact-wrapper .contact-form div input,
+.main-div .contact-wrapper .contact-form div textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid white;
+    margin: 10px auto;
+    color: white;
+}
